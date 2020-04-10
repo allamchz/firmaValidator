@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="firmaValidator:war">
+    <output-path>$PROJECT_DIR$/firmaValidator/firmaValidator/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>firmaValidator</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="firmaValidator-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="firmaValidator:war exploded" />
+    </root>
+  </artifact>
+</component>

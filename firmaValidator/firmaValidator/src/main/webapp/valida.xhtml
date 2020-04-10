@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <link rel="stylesheet" type="text/css" href="css/principal.css"/>
+    </h:head>
+    <h:body>
+       
+        
+        <img   src="img/image002.gif" class="center"/>
+        <br/> <br/>
+        <p:messages id="messages" showDetail="true" closable="true">
+            <p:autoUpdate />
+        </p:messages>
+
+       <p:panelGrid columns="2" layout="grid" styleClass="showcase-text-align-center">
+        <h:form enctype="multipart/form-data">        
+            <div><br/>Paso 1</div>
+            <p:fileUpload label="Escoger archivo" value="#{fileUploadView.file}" mode="simple" skinSimple="true" /><br/>
+       
+            <div><br/>Paso 2</div>
+            <p:commandButton value="Validar" ajax="false" action="#{fileUploadView.upload}"   />
+        </h:form>
+       
+           </p:panelGrid>
+    
+    <br/><br/>   
+    </h:body>
+</html>
+
+
